@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="title">
+        <p class="txt">STRIVER 1</p>
+        <p class="imp"> STRIVER 2</p>
+        <p class="msg">STRIVER 3</p>
+        <p>STRIVER 4</p>
+    </div>
+
+    <script>
+
+        let child_to_parent=document.querySelector(".txt");
+        console.log(child_to_parent.parentNode);
+
+        let parent_to_child=document.querySelector(".title");
+        console.log(parent_to_child.firstElementChild);
+        console.log(parent_to_child.lastElementChild);
+        console.log(parent_to_child.childNodes);
+
+        let sibling=document.querySelector(".imp");
+        console.log(sibling.previousElementSibling);
+        console.log(sibling.nextElementSibling);
+
+
+    </script>
+</body>
+</html>
