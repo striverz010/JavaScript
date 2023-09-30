@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTING DOM ELEMENTS</title>
+</head>
+<body>
+    <h1>Heading Element</h1>
+    
+    <h1 class="message">Zero Heading</h1>
+
+    <div id="container">
+        <h1 class="message">First Heading</h1>
+        <h1 class="message">Second Heading</h1>
+        <h1>Third Heading</h1>
+    </div>
+    
+    <h6>SMALL AND THE LAST HEADING</h6>
+
+
+    <script>
+
+        let id=document.getElementById("container"); 
+        console.log(id);
+
+        let heading=document.getElementsByTagName("h6");
+        console.log(heading);
+
+        let cont=document.getElementById("container");
+        let message=cont.getElementsByClassName("message");
+        console.log(message);
+
+        let query=document.querySelector(".message");
+        console.log(query);
+
+        let queryAll=document.querySelectorAll(".message");
+        console.log(queryAll);
+
+    </script>
+
+    
+    
+   
+</body>
+</html>
