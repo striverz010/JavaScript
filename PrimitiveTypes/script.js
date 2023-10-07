@@ -9,6 +9,7 @@ let firstName=undefined;
 
 let lastName=null;
 
+
 console.log(number, typeof number); //143  number
 console.log(name1, typeof name1);  //manikanta korimilli  name
 console.log(Approve, typeof Approve); //true  Boolean
