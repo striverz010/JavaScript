@@ -9,7 +9,7 @@ console.log(name1.toLowerCase()); //manikanta korimilli
 
 console.log(name1.slice(2,5)); //niK
 
-console.log(name1.replace("Man","Gun")); //GuniKanta Korimilli
+console.log(name1.replace("Man","Gun"));  //GuniKanta Korimilli
 
 console.log(name1.concat("Is Good Boy")); //ManiKanta KorimilliIs Good Boy
 
