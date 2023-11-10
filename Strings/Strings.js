@@ -18,6 +18,7 @@ console.log(name1.substring(1,5));
 let str1="a";
 let str2="b";
 
+
 if(str1<str2){
     console.log(`${str1} is smaller than the ${str2}`);
 }
