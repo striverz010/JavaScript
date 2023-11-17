@@ -3,44 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SELECTING DOM ELEMENTS</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Heading Element</h1>
-    
-    <h1 class="message">Zero Heading</h1>
 
-    <div id="container">
-        <h1 class="message">First Heading</h1>
-        <h1 class="message">Second Heading</h1>
-        <h1>Third Heading</h1>
+
+    <h1 id="one">Select Element By Id</h1> 
+    
+    <h2>Manikanta</h2>
+    <h3>Korimilli</h3>
+
+
+    <h1 class="message">Manikanta Korimilli 1</h1>
+    <div>
+        <h1 class="message">Manikanta Korimilli 2</h1>
+        <h1 class="message"> Manikanta Korimilli 3</h1>
     </div>
-    
-    <h6>SMALL AND THE LAST HEADING</h6>
 
+    <h1 id="id1">JAVASCRIPT 1</h1>
+    <h2 id="id2">JAVASCRIPT 2</h2>
+    <h1 class="class1">JAVASCRIPT 1</h1>
+    <h1 class="class1">JAVASCRIPT 2</h1>
 
     <script>
-
-        let id=document.getElementById("container"); 
+  
+        //selecting the elements using the ID
+        let id=document.getElementById("one"); 
+        id.innerHTML="Selected Element By Id";
         console.log(id);
 
-        let heading=document.getElementsByTagName("h6");
-        console.log(heading);
+        //selecting the elements usging tagname
+        let tagname=document.getElementsByTagName("h2");
+        console.log(tagname);
+        console.log(tagname[0]);
 
-        let cont=document.getElementById("container");
-        let message=cont.getElementsByClassName("message");
-        console.log(message);
+        //selecting the elements using class
+        let class1 =document.getElementsByClassName("message");
+        console.log(class1);
+        console.log(class1.length);
+        console.log(class1[2]);
 
-        let query=document.querySelector(".message");
-        console.log(query);
 
-        let queryAll=document.querySelectorAll(".message");
-        console.log(queryAll);
+        //selecting the elements using querySelector and querySelectorAll
+        let query1=document.querySelector("#id1");
+        let query2=document.querySelector(".class1");
+        console.log(query1);
+        console.log(query2);
+
+        let query3=document.querySelectorAll("#id1");
+        let query4=document.querySelectorAll(".class1");
+        console.log(query3);
+        console.log(query4);
+
 
     </script>
-
-    
-    
    
 </body>
 </html>
