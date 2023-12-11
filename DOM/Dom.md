@@ -15,5 +15,6 @@
     4.getElementsByClassName()
     5.querySelector()
     6.querySelectorAll()
+    
 
     
