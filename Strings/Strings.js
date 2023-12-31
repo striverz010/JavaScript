@@ -1,5 +1,4 @@
 
-
 let name1="ManiKanta Korimilli";
 
 console.log(name1.length);  //19
