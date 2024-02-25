@@ -1,2 +1,2 @@
-console.log("I Lov e  JavaScript");
+console.log("I Lov   JavaScript");
 
